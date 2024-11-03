@@ -1,0 +1,77 @@
+/* Form TextField styles */
+
+.MuiTextField-root {
+    position: relative;
+    height: 7vh ;
+}
+
+.MuiTextField-root .MuiInputBase-root {
+    height: 100% ;  /* Make sure you are using the container dimentions */
+}
+
+.indentedInput {
+    padding-left: 5%;  /* Textfield input margin */
+}
+
+.MuiTextField-root .MuiInputLabel-root {
+    text-align: left;
+    position: absolute;
+    left: 5%; /* Textfield label margin to be position as the input*/
+    transform: translateY(50%); 
+    width: auto;
+    top: 50%; 
+    transition: all 0.2s ease;
+}
+
+.MuiTextField-root .MuiInputBase-input {
+    color: #00796b; /* Cambia esto por el color deseado */
+}
+
+.MuiTextField-root .MuiInputLabel-root.Mui-focused {
+    color: #00bfa5; /* Cambia el color cuando está enfocado */
+    left: 5%; /* Ajusta la posición horizontal */
+    transform: translateY(0.5em); /* Mueve el label hacia arriba al enfocarse */
+    font-size: 0.75rem; /* Cambia el tamaño de la fuente para que sea más pequeño */
+    top: 0; /* Ajusta la posición superior cuando se enfoca */
+}
+
+.MuiTextField-root .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #00bfa5; /* Replace with your desired color */
+}
+
+/* Change the label color when the outlined TextField is focused */
+.MuiTextField-root .MuiOutlinedInput-root .MuiInputLabel-root.Mui-focused {
+    color: blueviolet !important; /* Change this to your desired color */
+}
+
+
+/* Cuando no está enfocado, mantener el label centrado verticalmente */
+.MuiTextField-root .MuiInputLabel-root:not(.Mui-focused) {
+    top: 50%; /* Mantiene el label a la mitad verticalmente */
+    transform: translateY(-50%); /* Mantiene el label en la posición vertical centrada */
+}
+
+.MuiTextField-root .MuiInputLabel-root.Mui-error{
+    color: #f00; /* Cambia el color cuando está enfocado */
+    left: 5%; /* Ajusta la posición horizontal */
+    transform: translateY(0.5em); /* Mueve el label hacia arriba al enfocarse */
+    font-size: 0.75rem; /* Cambia el tamaño de la fuente para que sea más pequeño */
+    top: 0; /* Ajusta la posición superior cuando se enfoca */
+}
+
+.MuiTextField-root .MuiInput-underline:after {
+    border-bottom-color: #00bfa5;
+}
+/*  */
+
+/* Button style */
+.MuiButton-root.submitButton {
+    background-color: #2B3649;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    text-transform: none;
+    margin-bottom: 1em;
+    font-size: 1rem;
+}
+
+/*  */
